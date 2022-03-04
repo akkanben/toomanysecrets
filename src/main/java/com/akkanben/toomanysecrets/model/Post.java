@@ -9,6 +9,7 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
+    @Column(columnDefinition = "text")
     String postContent;
     String subject;
     Date date;
